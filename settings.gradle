@@ -1,0 +1,5 @@
+rootProject.name = 'StarWars'
+include 'api'
+include 'core'
+include 'web'
+

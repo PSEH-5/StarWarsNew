@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+}
+
+group 'com.sapient.test'
+version '0.0.1-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    implementation project(":api")
+    // https://mvnrepository.com/artifact/org.eclipse.jetty/jetty-client
+    compile group: 'org.eclipse.jetty', name: 'jetty-client', version: '9.4.26.v20200117'
+    // https://mvnrepository.com/artifact/org.apache.commons/commons-lang3
+    compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.9'
+}
