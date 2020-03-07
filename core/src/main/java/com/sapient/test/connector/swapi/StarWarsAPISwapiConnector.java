@@ -29,6 +29,6 @@ public class StarWarsAPISwapiConnector implements StarWarsExtApiConnector {
     }
 
     private SwapiResponse getSwapiResponse(String url, StarWarsResponse.Type type) {
-        return restUtil.get(url+type.name().toLowerCase(), SwapiResponse.class);
+        return restUtil.get(url+type.name().toLowerCase()+"/", SwapiResponse.class);
     }
 }
